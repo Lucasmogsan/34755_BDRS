@@ -130,11 +130,11 @@ class UServo(object):
             if self.servoEnableSend[i] != ena[i]:
               if not ena[i]:
                 s = "servo {} 10000 0\n".format(i+1)
-                self.main.devWrite(s)
+                self.main.devWrite(s, True)
               self.servoEnableSend[i] = ena[i]
             if ena[i] and self.servoChanged[i]:
               s = "servo {} {} {}\n".format(i+1, int(val[i]), int(vel[i]))
-              self.main.devWrite(s)
+              self.main.devWrite(s, True)
               self.servoChanged[i] = False
         # save check time
         self.lastDataSetTime = time.time()

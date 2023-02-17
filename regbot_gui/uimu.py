@@ -273,14 +273,14 @@ class UImu(object):
         self.main.devWrite("regbot:board subscribe -1\n") # imu board
         self.main.devWrite("regbot sub imupose 40\n") # pose
         self.main.devWrite("regbot sub gyroo 1000\n") # gyro offset
-        self.main.devWrite("regbot sub board 1101\n") # imu board pose
+        self.main.devWrite("regbot sub board 901\n") # imu board pose
       else:
         # talking to Teensy directly, so subscribe here
+        self.main.devWrite("sub board 901\n") # imu board pose
         self.main.devWrite("sub gyro 40\n") # gyro subscribe
         self.main.devWrite("sub acc 40\n") # accelerometer
         self.main.devWrite("sub imupose 40\n") # pose
         self.main.devWrite("sub gyroo 1000\n") # gyro offset
-        self.main.devWrite("sub board 1101\n") # imu board pose
       pass
     pass
 

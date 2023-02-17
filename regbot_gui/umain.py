@@ -405,10 +405,18 @@ class UMain(object):
       self.destChanged = False;
     # HTML text formatting: <html><head/><body><p>State:<span style=" font-size:14pt;"> init</span></p></body></html>
     if self.stateNew:
+      sb = ""
       self.stateNew = False
       if self.state < 0:
         sa = 'Emergency'
         setFrameColor(self.ui.frame_state, self.parent.usb.dtured)
+      elif self.state > 10:
+        sa = 'Test run'
+        sb = ' (' + str(self.state - 10) + ')'
+        setFrameColor(self.ui.frame_state, self.parent.usb.dtuyellow)
+      elif self.state == 10:
+        sa = 'Mission'
+        setFrameColor(self.ui.frame_state, self.parent.usb.dtugreen)
       elif self.state > 2:
         sa = 'Running'
         setFrameColor(self.ui.frame_state, self.parent.usb.dtugreen)
@@ -421,7 +429,7 @@ class UMain(object):
       self.ui.main_remote_ctrl.setChecked(self.state == 1)
       # set label 
       self.ui.label_main_state.setText('<html><head/><body><p>State: <span style=" font-weight:600; font-size:{:d}pt">'.format(int(self.parent.fontSize * 1.5)) +
-                                       sa + '</span></p></body></html>')
+                                       sa + '</span>' + sb + '</p></body></html>')
       # other status labels
       self.ui.label_main_bat.setText('Battery: ' + str(self.batteryVoltage) + ' V')
       self.ui.label_main_time.setText('devTime: {:.1f} sec'.format(self.teensyTime))

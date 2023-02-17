@@ -1,0 +1,663 @@
+[main]
+version = 1478
+version date = 2023-01-03 17:19:55Z
+usbdevicename = /dev/ttyACM0
+wifidevicename = 192.168.2.21
+connect = True
+connectwifi = False
+
+[debug]
+show# = True
+showtx = False
+showrx = True
+showhbt = False
+cmd1 = sub ver 0
+cmd2 = cbavi
+cmd3 = host:mac get
+
+[menu]
+debug = True
+log = True
+robot = True
+mission = True
+imu = True
+edge = True
+ir = False
+control = True
+servo = False
+joy = False
+wifi = False
+list = True
+bridge = True
+tab = 2
+
+[cvel]
+name = Wheel Velocity (left and right)
+use = True
+kp = 14.0
+i_use = 1
+i_tau = 0.06
+i_limit = 5.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 1
+lead_back_tau_zero = 0.0
+lead_back_tau_pole = 0.005
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = True
+ff_kp = 4.5
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = True
+out_limit = 9.0
+
+[ctrn]
+name = Heading
+use = True
+kp = 1.0
+i_use = 1
+i_tau = 0.25
+i_limit = 0.1
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 1
+lead_back_tau_zero = 0.15
+lead_back_tau_pole = 0.02
+pre_filt_use = 1
+pre_filt_tau_zero = 0.0
+pre_filt_tau_pole = 0.01
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = True
+out_limit = 0.5
+
+[cwve]
+name = IR forward distance
+use = True
+kp = 1.5
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 0
+lead_back_tau_zero = 1.0
+lead_back_tau_pole = 1.0
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[cwth]
+name = Wall distance
+use = True
+kp = 3.1
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 0
+lead_back_tau_zero = 1.0
+lead_back_tau_pole = 1.0
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = True
+out_limit = 0.1
+
+[cpos]
+name = Position (drive distance)
+use = True
+kp = 1.0
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 0
+lead_back_tau_zero = 1.0
+lead_back_tau_pole = 1.0
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[cedg]
+name = Line edge
+use = True
+kp = 0.4
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 1
+lead_fwd_tau_zero = 0.5
+lead_fwd_tau_pole = 1.5
+lead_back_use = 1
+lead_back_tau_zero = 0.0
+lead_back_tau_pole = 0.005
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[cbal]
+name = Balance
+use = True
+kp = -2.58
+i_use = 1
+i_tau = 0.051
+i_limit = 2.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 1
+lead_back_tau_zero = 0.038
+lead_back_tau_pole = 0.003
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 1
+post_filt_i_tau = 0.1
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = True
+out_limit = 2.0
+
+[cbav]
+name = Balance velocity
+use = True
+kp = 0.23
+i_use = True
+i_tau = 1.05
+i_limit = 0.3
+lead_fwd_use = False
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = True
+lead_back_tau_zero = 0.0
+lead_back_tau_pole = 0.1
+pre_filt_use = False
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = False
+post_filt_i_tau = 1.0
+post_filt_i_limit = 9999.99
+post_filt_and_zero = True
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = False
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = True
+out_limit = 0.3
+
+[cbap]
+name = Balance position
+use = True
+kp = 0.4
+i_use = 1
+i_tau = 1.44
+i_limit = 1.0
+lead_fwd_use = 1
+lead_fwd_tau_zero = 1.17
+lead_fwd_tau_pole = 0.33
+lead_back_use = 0
+lead_back_tau_zero = 1.0
+lead_back_tau_pole = 1.0
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 0
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = True
+out_limit = 1.0
+
+[robot10]
+id = 10
+name = Karla
+robothwtype = 6
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 30.0
+wheelbase = 0.13
+pulseperrev = 64
+wheellradius = 0.06
+wheelrradius = 0.06
+balanceoffset = 0.0
+wifiip = 192.168.2.21
+wifimac = wlan0 b8:27:eb:f1:60:f9 (IEEE 802.11)
+datadate = never
+
+[robot40]
+id = 40
+name = Alba
+robothwtype = 5
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-01-01 09:29:15.109988
+
+[robot56]
+id = 56
+name = Gry
+robothwtype = 3
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 51.0
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-01-08 08:46:23.336238
+
+[robot59]
+id = 59
+name = Augusta
+robothwtype = 3
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 51.0
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-01-07 07:44:46.046872
+
+[robot62]
+id = 62
+name = Leonora
+robothwtype = 6
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 30.0
+wheelbase = 0.01
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never again
+
+[robot77]
+id = 77
+name = Alex
+robothwtype = 5
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 9.7
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot101]
+id = 101
+name = Oscar
+robothwtype = 7
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 30.0
+wheelbase = 0.13
+pulseperrev = 64
+wheellradius = 0.06
+wheelrradius = 0.06
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot102]
+id = 102
+name = Coco
+robothwtype = 7
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 30.0
+wheelbase = 0.13
+pulseperrev = 64
+wheellradius = 0.06
+wheelrradius = 0.06
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot106]
+id = 106
+name = Aksel
+robothwtype = 7
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot113]
+id = 113
+name = June
+robothwtype = 7
+version = 1460.2 (2022-12-11 15:38:54Z)
+gear = 0.0
+wheelbase = 0.0
+pulseperrev = 0
+wheellradius = 0.0
+wheelrradius = 0.0
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot116]
+id = 116
+name = Birdie
+robothwtype = 6
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 30.0
+wheelbase = 0.01
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot117]
+id = 117
+name = Ada
+robothwtype = 0
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot120]
+id = 120
+name = Theo
+robothwtype = 7
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.05
+wheelrradius = 0.05
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-01-01 09:53:49.382725
+
+[robot126]
+id = 126
+name = Lauge
+robothwtype = 7
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot127]
+id = 127
+name = Frederik
+robothwtype = 0
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot128]
+id = 128
+name = Matheo
+robothwtype = 0
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot130]
+id = 130
+name = Adam
+robothwtype = 0
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot131]
+id = 131
+name = Loui
+robothwtype = 0
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot132]
+id = 132
+name = Storm
+robothwtype = 0
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot133]
+id = 133
+name = Navy
+robothwtype = 7
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot134]
+id = 134
+name = Johan
+robothwtype = 0
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot136]
+id = 136
+name = Flora
+robothwtype = 0
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot137]
+id = 137
+name = Erik
+robothwtype = 7
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot138]
+id = 138
+name = Albert
+robothwtype = 0
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[robot139]
+id = 139
+name = Murphy
+robothwtype = 0
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = never
+
+[bridge]
+cmd1 = aaa
+

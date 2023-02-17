@@ -1,0 +1,2080 @@
+[main]
+version = 1521
+version date = 2023-01-28 07:16:57Z
+usbdevicename = /dev/ttyACM0
+wifidevicename = 192.168.2.58
+connect = False
+connectwifi = True
+
+[debug]
+show# = True
+showtx = False
+showrx = False
+showhbt = False
+cmd1 = :joy subscribe -1
+cmd2 = sub ir 100
+cmd3 = motv -3 -3
+
+[menu]
+debug = True
+log = True
+robot = True
+mission = True
+imu = True
+edge = True
+ir = True
+control = True
+servo = False
+joy = True
+wifi = False
+list = True
+bridge = True
+tab = 1
+
+[cvel]
+name = Wheel Velocity (left and right)
+use = True
+kp = 10.0
+i_use = 1
+i_tau = 0.1
+i_limit = 5.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 1
+lead_back_tau_zero = 0.0
+lead_back_tau_pole = 0.005
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = True
+ff_kp = 4.5
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = True
+out_limit = 10.0
+
+[ctrn]
+name = Heading
+use = True
+kp = 0.3
+i_use = 1
+i_tau = 0.25
+i_limit = 0.1
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 1
+lead_back_tau_zero = 0.0
+lead_back_tau_pole = 0.02
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[cwve]
+name = IR forward distance
+use = False
+kp = 1.0
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 0
+lead_back_tau_zero = 1.0
+lead_back_tau_pole = 1.0
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[cwth]
+name = Wall distance
+use = False
+kp = 1.0
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 0
+lead_back_tau_zero = 1.0
+lead_back_tau_pole = 1.0
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[cpos]
+name = Position (drive distance)
+use = False
+kp = 1.0
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 0
+lead_back_tau_zero = 1.0
+lead_back_tau_pole = 1.0
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[cedg]
+name = Line edge
+use = True
+kp = 0.4
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 1
+lead_fwd_tau_zero = 0.5
+lead_fwd_tau_pole = 1.5
+lead_back_use = 1
+lead_back_tau_zero = 0.0
+lead_back_tau_pole = 0.01
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[cbal]
+name = Balance
+use = False
+kp = 1.0
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 0
+lead_back_tau_zero = 1.0
+lead_back_tau_pole = 1.0
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[cbav]
+name = Balance velocity
+use = False
+kp = 1.0
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 0
+lead_back_tau_zero = 1.0
+lead_back_tau_pole = 1.0
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[cbap]
+name = Balance position
+use = False
+kp = 1.0
+i_use = 0
+i_tau = 1.0
+i_limit = 1000000.0
+lead_fwd_use = 0
+lead_fwd_tau_zero = 1.0
+lead_fwd_tau_pole = 1.0
+lead_back_use = 0
+lead_back_tau_zero = 1.0
+lead_back_tau_pole = 1.0
+pre_filt_use = 0
+pre_filt_tau_zero = 1.0
+pre_filt_tau_pole = 1.0
+post_filt_i_use = 0
+post_filt_i_tau = 1.0
+post_filt_i_limit = 1000000.0
+post_filt_and_zero = 1
+ff_use = False
+ff_kp = 1.0
+ff_filt_use = 0
+ff_filt_tau_zero = 1.0
+ff_filt_tau_pole = 1.0
+out_limit_use = False
+out_limit = 1000000.0
+
+[robot1]
+id = 1
+name = Emma
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.144
+wifimac = wlan0 b8:27:eb:b5:e2:8a (IEEE 802.11)
+datadate = 2023-02-12 09:36:16.731096
+reverse = 0
+
+[robot2]
+id = 2
+name = Sofia
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 13:03:34.711254
+reverse = 0
+
+[robot3]
+id = 3
+name = Ida
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.153
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-13 09:50:35.905164
+reverse = 0
+
+[robot4]
+id = 4
+name = Freja
+robothwtype = 4
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.154
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 08:29:08.210474
+reverse = 0
+
+[robot5]
+id = 5
+name = Clara
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 07:38:35.187472
+reverse = 0
+
+[robot6]
+id = 6
+name = Laura
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 07:58:48.344702
+reverse = 0
+
+[robot7]
+id = 7
+name = Anna
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 07:45:45.938695
+reverse = 0
+
+[robot8]
+id = 8
+name = Ella
+robothwtype = 4
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 08:39:41.438652
+reverse = 0
+
+[robot9]
+id = 9
+name = Isabella
+robothwtype = 4
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.154
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 16:55:49.398249
+reverse = 0
+
+[robot10]
+id = 10
+name = Karla
+robothwtype = 6
+version = 1470.2 (2022-12-18 16:51:14Z)
+gear = 30.0
+wheelbase = 0.13
+pulseperrev = 64
+wheellradius = 0.06
+wheelrradius = 0.06
+balanceoffset = 0.0
+wifiip = 192.168.2.21
+wifimac = wlan0 b8:27:eb:f1:60:f9 (IEEE 802.11)
+datadate = never
+reverse = 0
+
+[robot11]
+id = 11
+name = Alma
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.153
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 19:06:46.647203
+reverse = 0
+
+[robot12]
+id = 12
+name = Josefine
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.154
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 10:00:43.460716
+reverse = 0
+
+[robot14]
+id = 14
+name = Alberte
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.153
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 12:48:11.249250
+reverse = 0
+
+[robot15]
+id = 15
+name = Maja
+robothwtype = 4
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 17:03:09.127649
+reverse = 0
+
+[robot17]
+id = 17
+name = Mathilde
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 12:36:35.745690
+reverse = 0
+
+[robot18]
+id = 18
+name = Agnes
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 09:38:32.056586
+reverse = 0
+
+[robot20]
+id = 20
+name = Caroline
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 12:52:08.742215
+reverse = 0
+
+[robot21]
+id = 21
+name = Liva
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 18:28:58.744185
+reverse = 0
+
+[robot22]
+id = 22
+name = Emily
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-13 10:59:20.928287
+reverse = 0
+
+[robot23]
+id = 23
+name = Sara
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 13:10:15.504785
+reverse = 0
+
+[robot24]
+id = 24
+name = Victoria
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 17:17:11.936192
+reverse = 0
+
+[robot25]
+id = 25
+name = Emilie
+robothwtype = 4
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.154
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 16:42:56.695102
+reverse = 0
+
+[robot26]
+id = 26
+name = Mille
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 13:04:43.039560
+reverse = 0
+
+[robot28]
+id = 28
+name = Marie
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 13:12:40.923604
+reverse = 0
+
+[robot29]
+id = 29
+name = Ellen
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 12:58:33.703691
+reverse = 0
+
+[robot30]
+id = 30
+name = Rosa
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 14:09:26.017240
+reverse = 0
+
+[robot31]
+id = 31
+name = Lea
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 15:28:44.142486
+reverse = 0
+
+[robot32]
+id = 32
+name = Signe
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-14 13:14:23.034926
+reverse = 0
+
+[robot34]
+id = 34
+name = Julie
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-10 10:22:18.213099
+reverse = 0
+
+[robot36]
+id = 36
+name = Liv
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.153
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 13:28:25.577951
+reverse = 0
+
+[robot37]
+id = 37
+name = Vigga
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 13:57:47.339622
+reverse = 0
+
+[robot38]
+id = 38
+name = Nanna
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 13:26:06.489974
+reverse = 0
+
+[robot39]
+id = 39
+name = Naja
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-10 10:04:11.505384
+reverse = 0
+
+[robot40]
+id = 40
+name = Alba
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 17:48:51.488413
+reverse = 0
+
+[robot41]
+id = 41
+name = Astrid
+robothwtype = 4
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.154
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 15:17:32.447228
+reverse = 0
+
+[robot42]
+id = 42
+name = Aya
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 15:03:03.160433
+reverse = 0
+
+[robot44]
+id = 44
+name = Luna
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-10 10:36:21.302786
+reverse = 0
+
+[robot45]
+id = 45
+name = Malou
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 15:24:08.746291
+reverse = 0
+
+[robot46]
+id = 46
+name = Esther
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-10 09:40:59.961093
+reverse = 0
+
+[robot47]
+id = 47
+name = Celina
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 15:08:24.893552
+reverse = 0
+
+[robot48]
+id = 48
+name = Johanne
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-10 09:50:42.927715
+reverse = 0
+
+[robot49]
+id = 49
+name = Andrea
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 15:33:55.538212
+reverse = 0
+
+[robot51]
+id = 51
+name = Thea
+robothwtype = 5
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-10 09:33:19.993305
+reverse = 0
+
+[robot52]
+id = 52
+name = Adriana
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.153
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 16:15:57.659694
+reverse = 0
+
+[robot53]
+id = 53
+name = Dicte
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.153
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 16:50:59.036453
+reverse = 0
+
+[robot54]
+id = 54
+name = Silke
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.153
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 16:10:26.036439
+reverse = 0
+
+[robot56]
+id = 56
+name = Gry
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-14 12:24:21.171626
+reverse = 0
+
+[robot57]
+id = 57
+name = Tania
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 16:18:49.044048
+reverse = 0
+
+[robot58]
+id = 58
+name = Susanne
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-10 09:21:53.689532
+reverse = 0
+
+[robot59]
+id = 59
+name = Augusta
+robothwtype = 3
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 51.0
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-01-07 07:44:46.046872
+reverse = 0
+
+[robot60]
+id = 60
+name = Birte
+robothwtype = 3
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.153
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 17:10:51.915188
+reverse = 0
+
+[robot61]
+id = 61
+name = Dagmar
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-11 18:40:18.236383
+reverse = 0
+
+[robot62]
+id = 62
+name = Leonora
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.7
+wheelbase = 0.01
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 13:21:45.886086
+reverse = 1
+
+[robot63]
+id = 63
+name = Nova
+robothwtype = 7
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.036
+wheelrradius = 0.036
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 08:09:17.380634
+reverse = 0
+
+[robot64]
+id = 64
+name = Molly
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.036
+wheelrradius = 0.036
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-07 18:06:15.752202
+reverse = 0
+
+[robot65]
+id = 65
+name = Ingrid
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.04
+wheelrradius = 0.04
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-07 18:10:44.701458
+reverse = 0
+
+[robot66]
+id = 66
+name = Sigrid
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.036
+wheelrradius = 0.036
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-07 19:20:34.425012
+reverse = 0
+
+[robot67]
+id = 67
+name = Nicoline
+robothwtype = 7
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.035
+wheelrradius = 0.035
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-07 19:28:11.549548
+reverse = 0
+
+[robot68]
+id = 68
+name = Tilde
+robothwtype = 7
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.033
+wheelrradius = 0.033
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 08:29:35.099852
+reverse = 0
+
+[robot69]
+id = 69
+name = Ronja
+robothwtype = 7
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 08:55:57.079903
+reverse = 0
+
+[robot70]
+id = 70
+name = Saga
+robothwtype = 7
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 10.0
+wheelbase = 0.41
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 08:49:34.597152
+reverse = 0
+
+[robot71]
+id = 71
+name = Viola
+robothwtype = 8
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 09:05:33.030462
+reverse = 0
+
+[robot72]
+id = 72
+name = Emilia
+robothwtype = 10
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.15
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 09:21:51.151182
+reverse = 0
+
+[robot73]
+id = 73
+name = Cecilie
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 09:24:12.141486
+reverse = 0
+
+[robot74]
+id = 74
+name = Kim
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 09:33:11.158660
+reverse = 0
+
+[robot75]
+id = 75
+name = Clara
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.146
+pulseperrev = 48
+wheellradius = 0.036
+wheelrradius = 0.036
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 17:12:35.701106
+reverse = 0
+
+[robot76]
+id = 76
+name = Mie
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 13:14:14.493363
+reverse = 0
+
+[robot77]
+id = 77
+name = Alex
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 13:18:56.395402
+reverse = 0
+
+[robot78]
+id = 78
+name = Melina
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 13:23:56.193237
+reverse = 0
+
+[robot79]
+id = 79
+name = Amanda
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 13:28:39.937480
+reverse = 0
+
+[robot80]
+id = 80
+name = Hannah
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 13:37:07.337527
+reverse = 0
+
+[robot81]
+id = 81
+name = Jasmin
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 13:43:55.173772
+reverse = 0
+
+[robot82]
+id = 82
+name = Kaya
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 13:49:10.755905
+reverse = 0
+
+[robot83]
+id = 83
+name = Sally
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 16:50:09.338705
+reverse = 0
+
+[robot84]
+id = 84
+name = Cleo
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 16:54:57.446165
+reverse = 0
+
+[robot85]
+id = 85
+name = Solvej
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 17:03:25.345217
+reverse = 0
+
+[robot86]
+id = 86
+name = Nadia
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 17:11:19.737738
+reverse = 0
+
+[robot87]
+id = 87
+name = Ronja
+robothwtype = 6
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.156
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 17:14:16.193472
+reverse = 0
+
+[robot90]
+id = 90
+name = fejemis
+robothwtype = 0
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 17:12:58.578419
+reverse = 0
+
+[robot101]
+id = 101
+name = Oscar
+robothwtype = 7
+version = 1520.3 (2023-01-28 07:15:36Z)
+gear = 10.0
+wheelbase = 0.24
+pulseperrev = 64
+wheellradius = 0.059
+wheelrradius = 0.059
+balanceoffset = 0.0
+wifiip = 192.168.2.58
+wifimac = wlan0 e4:5f:01:de:61:db (IEEE 802.11) 
+datadate = 2023-01-29 13:54:45.500094
+reverse = 1
+
+[robot102]
+id = 102
+name = Coco
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 0.0
+wheelbase = 0.0
+pulseperrev = 0
+wheellradius = 0.0
+wheelrradius = 0.0
+balanceoffset = 0.0
+wifiip = 10.197.217.240
+wifimac = wlan0 e4:5f:01:de:61:ea (IEEE 802.11)
+datadate = never
+reverse = 0
+
+[robot103]
+id = 103
+name = Noah
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.144
+wifimac = wlan0 b8:27:eb:b5:e2:8a (IEEE 802.11)
+datadate = 2023-01-24 10:26:24.347414
+reverse = 0
+
+[robot106]
+id = 106
+name = Aksel
+robothwtype = 7
+version = 1520.3 (2023-01-28 07:15:36Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.205
+wifimac = wlan0 e4:5f:01:de:62:20 (IEEE 802.11)
+datadate = 2023-01-29 19:40:14.860911
+reverse = 0
+
+[robot107]
+id = 107
+name = Arthur
+robothwtype = 7
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 10.0
+wheelbase = 0.41
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 08:49:01.855239
+reverse = 1
+
+[robot108]
+id = 108
+name = Kai
+robothwtype = 7
+version = 1520.3 (2023-01-28 07:15:36Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.251
+wifimac = wlan0 b8:27:eb:f4:6f:55 (IEEE 802.11)
+datadate = 2023-01-26 19:36:14.757630
+reverse = 0
+
+[robot109]
+id = 109
+name = Juniper
+robothwtype = 7
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 9.68
+wheelbase = 0.155
+pulseperrev = 48
+wheellradius = 0.03
+wheelrradius = 0.03
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-12 08:39:17.531491
+reverse = 1
+
+[robot111]
+id = 111
+name = Emil
+robothwtype = 0
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 51.0
+wheelbase = 0.41
+pulseperrev = 40
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-07 17:42:03.632953
+reverse = 1
+
+[robot112]
+id = 112
+name = August
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.82
+wifimac = wlan0 e4:5f:01:66:86:73 (IEEE 802.11)
+datadate = 2023-01-29 20:21:49.515404
+reverse = 0
+
+[robot113]
+id = 113
+name = June
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.216
+wifimac = wlan0 b8:27:eb:f2:42:a9 (IEEE 802.11)
+datadate = 2023-01-24 10:51:56.095523
+reverse = 0
+
+[robot114]
+id = 114
+name = Sky
+robothwtype = 7
+version = 1460.2 (2022-12-11 15:38:54Z)
+gear = 10.0
+wheelbase = 0.41
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-07 19:32:32.250794
+reverse = 0
+
+[robot116]
+id = 116
+name = Birdie
+robothwtype = 6
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 30.0
+wheelbase = 0.01
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.212
+wifimac = wlan0 b8:27:eb:8d:ce:4e (IEEE 802.11)
+datadate = 2023-01-24 12:18:12.375948
+reverse = 0
+
+[robot120]
+id = 120
+name = Theo
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 0.0
+wheelbase = 0.0
+pulseperrev = 0
+wheellradius = 0.0
+wheelrradius = 0.0
+balanceoffset = 0.0
+wifiip = 10.197.218.0
+wifimac = wlan0 dc:a6:32:f4:0e:b0 (IEEE 802.11)
+datadate = never
+reverse = 0
+
+[robot121]
+id = 121
+name = Liam
+robothwtype = 7
+version = 1520.3 (2023-01-28 07:15:36Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.199
+wifimac = wlan0 dc:a6:32:f4:0e:aa (IEEE 802.11)
+datadate = 2023-01-29 15:32:35.239845
+reverse = 1
+
+[robot122]
+id = 122
+name = Viggo
+robothwtype = 7
+version = 1460.2 (2022-12-11 15:38:54Z)
+gear = 10.0
+wheelbase = 0.41
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-02-07 19:32:32.250794
+reverse = 0
+
+[robot123]
+id = 123
+name = Vivi
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.265
+pulseperrev = 64
+wheellradius = 0.036
+wheelrradius = 0.036
+balanceoffset = 0.0
+wifiip = 0.0.0.0
+wifimac = 00:00:00:00:00:00
+datadate = 2023-01-04 15:18:43.662712
+reverse = 0
+
+[robot124]
+id = 124
+name = Dot
+robothwtype = 7
+version = 1520.3 (2023-01-28 07:15:36Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.184
+wifimac = wlan0 e4:5f:01:66:86:d9 (IEEE 802.11)
+datadate = 2023-01-29 20:01:01.093427
+reverse = 0
+
+[robot125]
+id = 125
+name = Theodor
+robothwtype = 7
+version = 1535.4 (2023-02-07 16:38:26Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.85
+wifimac = wlan0 b8:27:eb:d9:17:22 (IEEE 802.11)
+datadate = 2023-02-12 08:21:02.180165
+reverse = 0
+
+[robot126]
+id = 126
+name = Lauge
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 0.0
+wheelbase = 0.0
+pulseperrev = 0
+wheellradius = 0.0
+wheelrradius = 0.0
+balanceoffset = 0.0
+wifiip = 10.197.217.241
+wifimac = wlan0 e4:5f:01:de:61:fc (IEEE 802.11)
+datadate = never
+reverse = 0
+
+[robot127]
+id = 127
+name = Frederik
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 0.0
+wheelbase = 0.0
+pulseperrev = 0
+wheellradius = 0.0
+wheelrradius = 0.0
+balanceoffset = 0.0
+wifiip = 10.197.217.255
+wifimac = wlan0 dc:a6:32:f4:0d:6a (IEEE 802.11)
+datadate = never
+reverse = 0
+
+[robot128]
+id = 128
+name = Matheo
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.150
+wifimac = wlan0 b8:27:eb:b0:43:29 (IEEE 802.11)
+datadate = 2023-01-24 12:05:17.643905
+reverse = 0
+
+[robot130]
+id = 130
+name = Adam
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.217
+wifimac = wlan0 b8:27:eb:17:5f:09 (IEEE 802.11)
+datadate = 2023-01-24 12:04:00.260787
+reverse = 0
+
+[robot131]
+id = 131
+name = Loui
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.53
+wifimac = wlan0 b8:27:eb:5f:30:72 (IEEE 802.11)
+datadate = 2023-01-24 12:29:50.995910
+reverse = 0
+
+[robot132]
+id = 132
+name = Storm
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.162
+wifimac = wlan0 b8:27:eb:e0:18:ef (IEEE 802.11)
+datadate = 2023-01-24 11:46:55.615075
+reverse = 0
+
+[robot133]
+id = 133
+name = Navy
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.231
+wifimac = wlan0 b8:27:eb:4a:10:fb (IEEE 802.11)
+datadate = 2023-01-24 12:37:09.273920
+reverse = 0
+
+[robot134]
+id = 134
+name = Johan
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.130
+wifimac = wlan0 b8:27:eb:28:3e:94 (IEEE 802.11)
+datadate = 2023-01-24 11:49:02.450078
+reverse = 0
+
+[robot135]
+id = 135
+name = Konrad
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.151
+wifimac = wlan0 b8:27:eb:80:f4:c1 (IEEE 802.11)
+datadate = 2023-01-26 17:48:32.684191
+reverse = 0
+
+[robot137]
+id = 137
+name = Erik
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.76
+wifimac = wlan0 b8:27:eb:35:12:67 (IEEE 802.11)
+datadate = 2023-01-24 10:24:13.848824
+reverse = 0
+
+[robot138]
+id = 138
+name = Albert
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.234
+wifimac = wlan0 b8:27:eb:f1:f1:fa (IEEE 802.11)
+datadate = 2023-01-24 12:38:07.208874
+reverse = 0
+
+[robot139]
+id = 139
+name = Murphy
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.133
+wifimac = wlan0 e4:5f:01:66:85:ef (IEEE 802.11)
+datadate = 2023-01-29 16:39:54.829521
+reverse = 0
+
+[robot140]
+id = 140
+name = Mars
+robothwtype = 7
+version = 1520.3 (2023-01-28 07:15:36Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.21
+wifimac = wlan0 b8:27:eb:e3:58:1c (IEEE 802.11)
+datadate = 2023-01-29 14:09:27.375943
+reverse = 0
+
+[robot141]
+id = 141
+name = Uranus
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 10.0
+wheelbase = 0.22
+pulseperrev = 64
+wheellradius = 0.095
+wheelrradius = 0.095
+balanceoffset = 0.0
+wifiip = 192.168.2.192
+wifimac = wlan0 b8:27:eb:3a:9b:9d (IEEE 802.11)
+datadate = 2023-01-19 17:33:02.442523
+reverse = 0
+
+[robot150]
+id = 150
+name = Tietgen
+robothwtype = 7
+version = 1478.2 (2023-01-03 17:19:55Z)
+gear = 0.0
+wheelbase = 0.0
+pulseperrev = 0
+wheellradius = 0.0
+wheelrradius = 0.0
+balanceoffset = 0.0
+wifiip = 10.197.218.220
+wifimac = wlan0 b8:27:eb:f1:60:f9 (IEEE 802.11)
+datadate = never
+reverse = 0
+
+[bridge]
+cmd1 = aaa
+

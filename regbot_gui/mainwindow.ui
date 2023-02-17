@@ -729,7 +729,7 @@
         <bool>false</bool>
        </property>
        <property name="currentIndex">
-        <number>11</number>
+        <number>3</number>
        </property>
        <widget class="QWidget" name="tab_debug">
         <attribute name="title">
@@ -2425,7 +2425,7 @@ details</string>
                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wheel base is distance between wheels (mid-wheel to mid-wheel) for turn calculations.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="text">
-                 <string>Base WB [m]</string>
+                 <string>Wheel Base [m]</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2583,7 +2583,7 @@ details</string>
                  </sizepolicy>
                 </property>
                 <property name="toolTip">
-                 <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Distance between drivng wheels (0.155m)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The wheel base (WB) is the distance between drivng wheels (0.155m)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                 <property name="locale">
                  <locale language="C" country="AnyCountry"/>
@@ -8655,7 +8655,7 @@ distance</string>
      <x>0</x>
      <y>0</y>
      <width>1200</width>
-     <height>30</height>
+     <height>39</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

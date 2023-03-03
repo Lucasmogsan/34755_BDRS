@@ -1,0 +1,6 @@
+bridge.tx("regbot mclear\n");
+event.clearEvents();
+bridge.tx("regbot madd vel=0.2:time=1\n");
+bridge.tx("regbot madd tr=0.1:time=1,turn=-90\n");
+bridge.tx("regbot madd time=1\n");
+event.waitForEvent(0);
